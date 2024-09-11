@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(136,43,207);
+    background: linear-gradient(60deg, rgba(136,43,207,1) 0%, rgba(193,75,95,1) 100%);
+}
+
+main {
+    min-width: 10rem;
+    min-height: 10rem;
+
+    border-radius: 2rem;
+
+    background-color: rgba(255, 255, 255, .5);  
+    backdrop-filter: blur(5px);   
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC JRE Tool</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main x-data="{javaVersion: ''}">
+
+        <input type="radio" id="java8" name="java-version" value="8" x-model="javaVersion">
+        <label for="java8">1.16-</label><br>
+
+        <input type="radio" id="java17" name="java-version" value="17" x-model="javaVersion">
+        <label for="java17">1.17 - 1.20.4</label><br>
+
+        <input checked type="radio" id="java21" name="java-version" value="21" x-model="javaVersion">
+        <label for="java21">1.20.5+</label> 
+
+        <p x-text="javaVersion"></p>
+    </main>
+</body>
+</html>
